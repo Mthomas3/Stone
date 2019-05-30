@@ -1,0 +1,6 @@
+framework module Pods_StoneTests {
+  umbrella header "Pods-StoneTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

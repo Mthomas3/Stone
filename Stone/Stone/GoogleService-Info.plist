@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>946204210424-ltrju35omgcp4dfsu288kl5hg5f8it3k.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.946204210424-ltrju35omgcp4dfsu288kl5hg5f8it3k</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCu3Nc8Cu_ZJH5CHb2BmbsTbEwkWcttjGU</string>
+	<key>GCM_SENDER_ID</key>
+	<string>946204210424</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>Stone.Stone.Stone</string>
+	<key>PROJECT_ID</key>
+	<string>stone-9c9e7</string>
+	<key>STORAGE_BUCKET</key>
+	<string>stone-9c9e7.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:946204210424:ios:5d8d541021b84762</string>
+	<key>DATABASE_URL</key>
+	<string>https://stone-9c9e7.firebaseio.com</string>
+</dict>
+</plist>
