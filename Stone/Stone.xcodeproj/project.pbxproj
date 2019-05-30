@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E4BE85622A07C9000BBD15D /* fa-brands-400.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1E4BE85422A07C9000BBD15D /* fa-brands-400.ttf */; };
+		1E4BE85722A07C9000BBD15D /* fa-regular-400.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1E4BE85522A07C9000BBD15D /* fa-regular-400.ttf */; };
+		1E4BE85A22A07FAB00BBD15D /* AuthenticationTextfield.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4BE85922A07FAB00BBD15D /* AuthenticationTextfield.swift */; };
+		1E4BE85D22A0809200BBD15D /* StyleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4BE85C22A0809200BBD15D /* StyleManager.swift */; };
+		1E4BE86022A084D300BBD15D /* AuthenticationLabels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4BE85F22A084D300BBD15D /* AuthenticationLabels.swift */; };
+		1E4BE86322A0871700BBD15D /* AuthenticationTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4BE86222A0871700BBD15D /* AuthenticationTextView.swift */; };
 		1E9668BA22A006B100BF89BB /* AuthenticationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9668B922A006B100BF89BB /* AuthenticationPresenter.swift */; };
 		1EC56944229FFFA200715CAC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC56943229FFFA200715CAC /* AppDelegate.swift */; };
 		1EC56946229FFFA200715CAC /* AuthenticationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC56945229FFFA200715CAC /* AuthenticationViewController.swift */; };
@@ -20,6 +26,7 @@
 		1EC5698322A0083200715CAC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1EC5698222A0083200715CAC /* GoogleService-Info.plist */; };
 		1EC5698922A045B200715CAC /* StringToUIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC5698822A045B200715CAC /* StringToUIColor.swift */; };
 		1EC5698B22A045F300715CAC /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 1EC5698A22A045F300715CAC /* README.md */; };
+		1EC5698F22A0480A00715CAC /* AuthenticationButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC5698E22A0480A00715CAC /* AuthenticationButton.swift */; };
 		921A79D446BBB36FDCF7FBB7 /* Pods_StoneTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E3E04A2D6AF1DED38401971 /* Pods_StoneTests.framework */; };
 		C6C45DCBE7A7E53570BD2BC4 /* Pods_Stone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5414B5D3C0D07AE53F4A6E49 /* Pods_Stone.framework */; };
 		C9AA0C97E1126EA92AA6BCCF /* Pods_StoneUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 451032DC6147F2BA5500ECFC /* Pods_StoneUITests.framework */; };
@@ -43,6 +50,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1E4BE85422A07C9000BBD15D /* fa-brands-400.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "fa-brands-400.ttf"; sourceTree = "<group>"; };
+		1E4BE85522A07C9000BBD15D /* fa-regular-400.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "fa-regular-400.ttf"; sourceTree = "<group>"; };
+		1E4BE85922A07FAB00BBD15D /* AuthenticationTextfield.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationTextfield.swift; sourceTree = "<group>"; };
+		1E4BE85C22A0809200BBD15D /* StyleManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleManager.swift; sourceTree = "<group>"; };
+		1E4BE85F22A084D300BBD15D /* AuthenticationLabels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationLabels.swift; sourceTree = "<group>"; };
+		1E4BE86222A0871700BBD15D /* AuthenticationTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationTextView.swift; sourceTree = "<group>"; };
 		1E9668B922A006B100BF89BB /* AuthenticationPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationPresenter.swift; sourceTree = "<group>"; };
 		1EC56940229FFFA200715CAC /* Stone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EC56943229FFFA200715CAC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +75,7 @@
 		1EC5698222A0083200715CAC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		1EC5698822A045B200715CAC /* StringToUIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringToUIColor.swift; sourceTree = "<group>"; };
 		1EC5698A22A045F300715CAC /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		1EC5698E22A0480A00715CAC /* AuthenticationButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationButton.swift; sourceTree = "<group>"; };
 		3B64EE138C355C59E0F8C435 /* Pods-Stone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stone.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Stone/Pods-Stone.debug.xcconfig"; sourceTree = "<group>"; };
 		451032DC6147F2BA5500ECFC /* Pods_StoneUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StoneUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5414B5D3C0D07AE53F4A6E49 /* Pods_Stone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Stone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -101,6 +115,48 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1E4BE85322A07C8200BBD15D /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				1E4BE85422A07C9000BBD15D /* fa-brands-400.ttf */,
+				1E4BE85522A07C9000BBD15D /* fa-regular-400.ttf */,
+			);
+			name = Fonts;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		1E4BE85822A07F5A00BBD15D /* TextFields */ = {
+			isa = PBXGroup;
+			children = (
+				1E4BE85922A07FAB00BBD15D /* AuthenticationTextfield.swift */,
+			);
+			path = TextFields;
+			sourceTree = "<group>";
+		};
+		1E4BE85B22A0807F00BBD15D /* StyleManager */ = {
+			isa = PBXGroup;
+			children = (
+				1E4BE85C22A0809200BBD15D /* StyleManager.swift */,
+			);
+			path = StyleManager;
+			sourceTree = "<group>";
+		};
+		1E4BE85E22A084B900BBD15D /* Labels */ = {
+			isa = PBXGroup;
+			children = (
+				1E4BE85F22A084D300BBD15D /* AuthenticationLabels.swift */,
+			);
+			path = Labels;
+			sourceTree = "<group>";
+		};
+		1E4BE86122A0870200BBD15D /* Textview */ = {
+			isa = PBXGroup;
+			children = (
+				1E4BE86222A0871700BBD15D /* AuthenticationTextView.swift */,
+			);
+			path = Textview;
+			sourceTree = "<group>";
+		};
 		1E9668B622A0068C00BF89BB /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
@@ -149,6 +205,7 @@
 		1EC56942229FFFA200715CAC /* Stone */ = {
 			isa = PBXGroup;
 			children = (
+				1E4BE85322A07C8200BBD15D /* Fonts */,
 				1EC5698022A005D400715CAC /* LaunchScreen.storyboard */,
 				1EC5694D229FFFA300715CAC /* Assets.xcassets */,
 				1EC56952229FFFA300715CAC /* Info.plist */,
@@ -252,6 +309,10 @@
 		1EC5697F22A0043F00715CAC /* Styles */ = {
 			isa = PBXGroup;
 			children = (
+				1E4BE86122A0870200BBD15D /* Textview */,
+				1E4BE85E22A084B900BBD15D /* Labels */,
+				1E4BE85822A07F5A00BBD15D /* TextFields */,
+				1EC5698D22A047F400715CAC /* Buttons */,
 			);
 			path = Styles;
 			sourceTree = "<group>";
@@ -259,6 +320,7 @@
 		1EC5698622A0459500715CAC /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				1E4BE85B22A0807F00BBD15D /* StyleManager */,
 				1EC5698722A0459900715CAC /* UITools */,
 			);
 			path = Tools;
@@ -267,9 +329,25 @@
 		1EC5698722A0459900715CAC /* UITools */ = {
 			isa = PBXGroup;
 			children = (
-				1EC5698822A045B200715CAC /* StringToUIColor.swift */,
+				1EC5698C22A047D800715CAC /* StringToUIColor */,
 			);
 			path = UITools;
+			sourceTree = "<group>";
+		};
+		1EC5698C22A047D800715CAC /* StringToUIColor */ = {
+			isa = PBXGroup;
+			children = (
+				1EC5698822A045B200715CAC /* StringToUIColor.swift */,
+			);
+			path = StringToUIColor;
+			sourceTree = "<group>";
+		};
+		1EC5698D22A047F400715CAC /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				1EC5698E22A0480A00715CAC /* AuthenticationButton.swift */,
+			);
+			path = Buttons;
 			sourceTree = "<group>";
 		};
 		8534905E4D8BECABEDB1A08A /* Frameworks */ = {
@@ -412,6 +490,8 @@
 				1EC5698322A0083200715CAC /* GoogleService-Info.plist in Resources */,
 				1EC5698B22A045F300715CAC /* README.md in Resources */,
 				1EC5694E229FFFA300715CAC /* Assets.xcassets in Resources */,
+				1E4BE85722A07C9000BBD15D /* fa-regular-400.ttf in Resources */,
+				1E4BE85622A07C9000BBD15D /* fa-brands-400.ttf in Resources */,
 				1EC56949229FFFA200715CAC /* Authentication.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -597,10 +677,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				1EC5697A22A0016D00715CAC /* User.swift in Sources */,
+				1E4BE85A22A07FAB00BBD15D /* AuthenticationTextfield.swift in Sources */,
+				1E4BE86022A084D300BBD15D /* AuthenticationLabels.swift in Sources */,
 				1EC5694C229FFFA200715CAC /* Stone.xcdatamodeld in Sources */,
+				1EC5698F22A0480A00715CAC /* AuthenticationButton.swift in Sources */,
 				1E9668BA22A006B100BF89BB /* AuthenticationPresenter.swift in Sources */,
+				1E4BE85D22A0809200BBD15D /* StyleManager.swift in Sources */,
 				1EC56946229FFFA200715CAC /* AuthenticationViewController.swift in Sources */,
 				1EC56944229FFFA200715CAC /* AppDelegate.swift in Sources */,
+				1E4BE86322A0871700BBD15D /* AuthenticationTextView.swift in Sources */,
 				1EC5698922A045B200715CAC /* StringToUIColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
