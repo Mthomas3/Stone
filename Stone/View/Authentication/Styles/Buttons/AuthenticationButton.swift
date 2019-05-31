@@ -17,7 +17,7 @@ import UIKit
         
         self.backgroundColor = StringToUIColor.getUiColor(hexString: StyleManager.SECONDARY_COLOR)
         self.setTitle(titleButton, for: .normal)
-        self.layer.cornerRadius = 26
+        self.layer.cornerRadius = 24
         self.setTitleColor(StringToUIColor.getUiColor(hexString: StyleManager.PRIMARY_COLOR), for: .normal)
         self.titleLabel?.font = UIFont.systemFont(ofSize: 16, weight: .bold)
 

@@ -33,17 +33,35 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xax-XM-fSz" customClass="AuthenticationButton" customModule="Stone" customModuleProvider="target">
-                                <rect key="frame" x="52" y="559" width="270" height="50"/>
+                                <rect key="frame" x="52" y="571" width="270" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Sign In"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="titleButton" value="Sign In"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="Ry4-Kx-R8l" kind="show" id="k2Z-8M-J8b"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ds6-k7-Tgs" customClass="AuthenticationButton" customModule="Stone" customModuleProvider="target">
+                                <rect key="frame" x="52" y="658" width="270" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Sign In"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="titleButton" value="Sign Up"/>
                                 </userDefinedRuntimeAttributes>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="decide" translatesAutoresizingMaskIntoConstraints="NO" id="WIO-Ew-h0a">
                                 <rect key="frame" x="56" y="95" width="262" height="190"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="or" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NXC-Hg-9Oa" customClass="AuthenticationLabels" customModule="Stone" customModuleProvider="target">
+                                <rect key="frame" x="177" y="629" width="20" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -53,8 +71,35 @@
             </objects>
             <point key="canvasLocation" x="53.600000000000001" y="27.339901477832512"/>
         </scene>
+        <!--Sign In View Controller-->
+        <scene sceneID="kJW-x1-tNx">
+            <objects>
+                <viewController id="Ry4-Kx-R8l" customClass="SignInViewController" customModule="Stone" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cW5-7f-F95">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="TopIconStone" translatesAutoresizingMaskIntoConstraints="NO" id="mUg-ce-Kex">
+                                <rect key="frame" x="0.0" y="0.0" width="110" height="201"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BottomIconStone" translatesAutoresizingMaskIntoConstraints="NO" id="1zX-KU-WJH">
+                                <rect key="frame" x="291" y="442" width="83.333333333333329" height="198.66666666666666"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="kmc-sk-n2s"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OSO-fU-Jfb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1080.8" y="26.600985221674879"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="BottomIconStone" width="83" height="197"/>
+        <image name="TopIconStone" width="87" height="199"/>
         <image name="decide" width="1103" height="875"/>
     </resources>
 </document>
