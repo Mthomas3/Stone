@@ -14,7 +14,7 @@ import UIKit
         super.awakeFromNib()
         
         self.font = StyleManager.TEXTVIEW_FONT
-        self.textColor = UIColor.black
+        self.textColor = UIColor.lightGray
     }
     
 }

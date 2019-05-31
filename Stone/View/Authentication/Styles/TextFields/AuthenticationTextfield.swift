@@ -20,5 +20,4 @@ import UIKit
         self.textColor = StringToUIColor.getUiColor(hexString: StyleManager.PRIMARY_COLOR)
         
     }
-    
 }

@@ -13,6 +13,7 @@
 		1E4BE85D22A0809200BBD15D /* StyleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4BE85C22A0809200BBD15D /* StyleManager.swift */; };
 		1E4BE86022A084D300BBD15D /* AuthenticationLabels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4BE85F22A084D300BBD15D /* AuthenticationLabels.swift */; };
 		1E4BE86322A0871700BBD15D /* AuthenticationTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4BE86222A0871700BBD15D /* AuthenticationTextView.swift */; };
+		1E4BE86522A11A3D00BBD15D /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 1E4BE86422A11A3D00BBD15D /* README.md */; };
 		1E9668BA22A006B100BF89BB /* AuthenticationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9668B922A006B100BF89BB /* AuthenticationPresenter.swift */; };
 		1EC56944229FFFA200715CAC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC56943229FFFA200715CAC /* AppDelegate.swift */; };
 		1EC56946229FFFA200715CAC /* AuthenticationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC56945229FFFA200715CAC /* AuthenticationViewController.swift */; };
@@ -25,7 +26,6 @@
 		1EC5698122A005D400715CAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EC5698022A005D400715CAC /* LaunchScreen.storyboard */; };
 		1EC5698322A0083200715CAC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1EC5698222A0083200715CAC /* GoogleService-Info.plist */; };
 		1EC5698922A045B200715CAC /* StringToUIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC5698822A045B200715CAC /* StringToUIColor.swift */; };
-		1EC5698B22A045F300715CAC /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 1EC5698A22A045F300715CAC /* README.md */; };
 		1EC5698F22A0480A00715CAC /* AuthenticationButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC5698E22A0480A00715CAC /* AuthenticationButton.swift */; };
 		921A79D446BBB36FDCF7FBB7 /* Pods_StoneTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E3E04A2D6AF1DED38401971 /* Pods_StoneTests.framework */; };
 		C6C45DCBE7A7E53570BD2BC4 /* Pods_Stone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5414B5D3C0D07AE53F4A6E49 /* Pods_Stone.framework */; };
@@ -56,6 +56,7 @@
 		1E4BE85C22A0809200BBD15D /* StyleManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleManager.swift; sourceTree = "<group>"; };
 		1E4BE85F22A084D300BBD15D /* AuthenticationLabels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationLabels.swift; sourceTree = "<group>"; };
 		1E4BE86222A0871700BBD15D /* AuthenticationTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationTextView.swift; sourceTree = "<group>"; };
+		1E4BE86422A11A3D00BBD15D /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		1E9668B922A006B100BF89BB /* AuthenticationPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationPresenter.swift; sourceTree = "<group>"; };
 		1EC56940229FFFA200715CAC /* Stone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EC56943229FFFA200715CAC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -74,7 +75,6 @@
 		1EC5698022A005D400715CAC /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1EC5698222A0083200715CAC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		1EC5698822A045B200715CAC /* StringToUIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringToUIColor.swift; sourceTree = "<group>"; };
-		1EC5698A22A045F300715CAC /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		1EC5698E22A0480A00715CAC /* AuthenticationButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationButton.swift; sourceTree = "<group>"; };
 		3B64EE138C355C59E0F8C435 /* Pods-Stone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stone.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Stone/Pods-Stone.debug.xcconfig"; sourceTree = "<group>"; };
 		451032DC6147F2BA5500ECFC /* Pods_StoneUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StoneUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -176,7 +176,7 @@
 		1EC56937229FFFA200715CAC = {
 			isa = PBXGroup;
 			children = (
-				1EC5698A22A045F300715CAC /* README.md */,
+				1E4BE86422A11A3D00BBD15D /* README.md */,
 				1EC5698622A0459500715CAC /* Tools */,
 				1E9668B622A0068C00BF89BB /* Presenter */,
 				1EC5697722A0014400715CAC /* View */,
@@ -488,8 +488,8 @@
 			files = (
 				1EC5698122A005D400715CAC /* LaunchScreen.storyboard in Resources */,
 				1EC5698322A0083200715CAC /* GoogleService-Info.plist in Resources */,
-				1EC5698B22A045F300715CAC /* README.md in Resources */,
 				1EC5694E229FFFA300715CAC /* Assets.xcassets in Resources */,
+				1E4BE86522A11A3D00BBD15D /* README.md in Resources */,
 				1E4BE85722A07C9000BBD15D /* fa-regular-400.ttf in Resources */,
 				1E4BE85622A07C9000BBD15D /* fa-brands-400.ttf in Resources */,
 				1EC56949229FFFA200715CAC /* Authentication.storyboard in Resources */,

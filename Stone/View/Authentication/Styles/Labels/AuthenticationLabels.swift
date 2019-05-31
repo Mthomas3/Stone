@@ -13,9 +13,8 @@ import UIKit
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        self.font = StyleManager.LABEL_FONT
         self.textColor = UIColor.black
-        
+        self.font = StyleManager.LABEL_FONT
     }
     
 }
