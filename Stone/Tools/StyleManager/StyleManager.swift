@@ -27,6 +27,6 @@ public enum StyleManager {
     public static let LABEL_TEXT_FONT = UIFont(name: "Font Awesome 5 Brands", size: 15.0)
     public static let TEXTVIEW_FONT = UIFont(name: "Font Awesome 5 Brands", size: 15.0)
     public static let BUTTON_FONT = UIFont(name: "Font Awesome 5 Brands", size: 12.0)
-    public static let TEXTFIELD_FONT = UIFont(name: "Font Awesome 5 Brands", size: 20.0)
+    public static let TEXTFIELD_FONT = UIFont(name: "Font Awesome 5 Brands", size: 14.0)
     
 }
