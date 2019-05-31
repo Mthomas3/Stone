@@ -13,9 +13,10 @@
 		1E4BE85722A07C9000BBD15D /* fa-regular-400.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1E4BE85522A07C9000BBD15D /* fa-regular-400.ttf */; };
 		1E4BE85A22A07FAB00BBD15D /* AuthenticationTextfield.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4BE85922A07FAB00BBD15D /* AuthenticationTextfield.swift */; };
 		1E4BE85D22A0809200BBD15D /* StyleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4BE85C22A0809200BBD15D /* StyleManager.swift */; };
-		1E4BE86022A084D300BBD15D /* AuthenticationLabels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4BE85F22A084D300BBD15D /* AuthenticationLabels.swift */; };
 		1E4BE86322A0871700BBD15D /* AuthenticationTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4BE86222A0871700BBD15D /* AuthenticationTextView.swift */; };
 		1E4BE86522A11A3D00BBD15D /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 1E4BE86422A11A3D00BBD15D /* README.md */; };
+		1E85670922A1473D00C33582 /* UILabelText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E85670822A1473D00C33582 /* UILabelText.swift */; };
+		1E85670B22A1474A00C33582 /* UILabelTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E85670A22A1474A00C33582 /* UILabelTitle.swift */; };
 		1E9668BA22A006B100BF89BB /* AuthenticationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9668B922A006B100BF89BB /* AuthenticationPresenter.swift */; };
 		1EC56944229FFFA200715CAC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC56943229FFFA200715CAC /* AppDelegate.swift */; };
 		1EC56946229FFFA200715CAC /* AuthenticationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC56945229FFFA200715CAC /* AuthenticationViewController.swift */; };
@@ -58,9 +59,10 @@
 		1E4BE85522A07C9000BBD15D /* fa-regular-400.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "fa-regular-400.ttf"; sourceTree = "<group>"; };
 		1E4BE85922A07FAB00BBD15D /* AuthenticationTextfield.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationTextfield.swift; sourceTree = "<group>"; };
 		1E4BE85C22A0809200BBD15D /* StyleManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleManager.swift; sourceTree = "<group>"; };
-		1E4BE85F22A084D300BBD15D /* AuthenticationLabels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationLabels.swift; sourceTree = "<group>"; };
 		1E4BE86222A0871700BBD15D /* AuthenticationTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationTextView.swift; sourceTree = "<group>"; };
 		1E4BE86422A11A3D00BBD15D /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		1E85670822A1473D00C33582 /* UILabelText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelText.swift; sourceTree = "<group>"; };
+		1E85670A22A1474A00C33582 /* UILabelTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelTitle.swift; sourceTree = "<group>"; };
 		1E9668B922A006B100BF89BB /* AuthenticationPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationPresenter.swift; sourceTree = "<group>"; };
 		1EC56940229FFFA200715CAC /* Stone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EC56943229FFFA200715CAC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -148,7 +150,8 @@
 		1E4BE85E22A084B900BBD15D /* Labels */ = {
 			isa = PBXGroup;
 			children = (
-				1E4BE85F22A084D300BBD15D /* AuthenticationLabels.swift */,
+				1E85670822A1473D00C33582 /* UILabelText.swift */,
+				1E85670A22A1474A00C33582 /* UILabelTitle.swift */,
 			);
 			path = Labels;
 			sourceTree = "<group>";
@@ -684,13 +687,14 @@
 			files = (
 				1EC5697A22A0016D00715CAC /* User.swift in Sources */,
 				1E4BE85A22A07FAB00BBD15D /* AuthenticationTextfield.swift in Sources */,
-				1E4BE86022A084D300BBD15D /* AuthenticationLabels.swift in Sources */,
 				1EC5694C229FFFA200715CAC /* Stone.xcdatamodeld in Sources */,
+				1E85670B22A1474A00C33582 /* UILabelTitle.swift in Sources */,
 				1EC5698F22A0480A00715CAC /* AuthenticationButton.swift in Sources */,
 				1E9668BA22A006B100BF89BB /* AuthenticationPresenter.swift in Sources */,
 				1E4BE85D22A0809200BBD15D /* StyleManager.swift in Sources */,
 				1EC56946229FFFA200715CAC /* AuthenticationViewController.swift in Sources */,
 				1E2698C122A12C56001F1FF9 /* SignInViewController.swift in Sources */,
+				1E85670922A1473D00C33582 /* UILabelText.swift in Sources */,
 				1EC56944229FFFA200715CAC /* AppDelegate.swift in Sources */,
 				1E4BE86322A0871700BBD15D /* AuthenticationTextView.swift in Sources */,
 				1E2698C322A12C6C001F1FF9 /* SignUpViewController.swift in Sources */,
