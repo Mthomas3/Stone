@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		1E2698C122A12C56001F1FF9 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2698C022A12C56001F1FF9 /* SignInViewController.swift */; };
 		1E2698C322A12C6C001F1FF9 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2698C222A12C6C001F1FF9 /* SignUpViewController.swift */; };
+		1E32AF7322A1E7CE00E0AD76 /* MenuTabsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E32AF7222A1E7CE00E0AD76 /* MenuTabsView.swift */; };
+		1E3F67E422A46ABB00254665 /* SignUpCompleteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3F67E322A46ABB00254665 /* SignUpCompleteViewController.swift */; };
+		1E3F67E922A46B7400254665 /* Dashboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E3F67E822A46B7400254665 /* Dashboard.storyboard */; };
 		1E4BE85622A07C9000BBD15D /* fa-brands-400.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1E4BE85422A07C9000BBD15D /* fa-brands-400.ttf */; };
 		1E4BE85722A07C9000BBD15D /* fa-regular-400.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1E4BE85522A07C9000BBD15D /* fa-regular-400.ttf */; };
 		1E4BE85A22A07FAB00BBD15D /* AuthenticationTextfield.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4BE85922A07FAB00BBD15D /* AuthenticationTextfield.swift */; };
@@ -55,6 +58,9 @@
 /* Begin PBXFileReference section */
 		1E2698C022A12C56001F1FF9 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		1E2698C222A12C6C001F1FF9 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		1E32AF7222A1E7CE00E0AD76 /* MenuTabsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTabsView.swift; sourceTree = "<group>"; };
+		1E3F67E322A46ABB00254665 /* SignUpCompleteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpCompleteViewController.swift; sourceTree = "<group>"; };
+		1E3F67E822A46B7400254665 /* Dashboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Dashboard.storyboard; sourceTree = "<group>"; };
 		1E4BE85422A07C9000BBD15D /* fa-brands-400.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "fa-brands-400.ttf"; sourceTree = "<group>"; };
 		1E4BE85522A07C9000BBD15D /* fa-regular-400.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "fa-regular-400.ttf"; sourceTree = "<group>"; };
 		1E4BE85922A07FAB00BBD15D /* AuthenticationTextfield.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationTextfield.swift; sourceTree = "<group>"; };
@@ -121,6 +127,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1E32AF7122A1E7B900E0AD76 /* TMP */ = {
+			isa = PBXGroup;
+			children = (
+				1E32AF7222A1E7CE00E0AD76 /* MenuTabsView.swift */,
+			);
+			path = TMP;
+			sourceTree = "<group>";
+		};
+		1E3F67E522A46B5A00254665 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				1E3F67E722A46B6400254665 /* Storyboard */,
+				1E3F67E622A46B6000254665 /* Styles */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		1E3F67E622A46B6000254665 /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Styles;
+			sourceTree = "<group>";
+		};
+		1E3F67E722A46B6400254665 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				1E3F67E822A46B7400254665 /* Dashboard.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
 		1E4BE85322A07C8200BBD15D /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
@@ -184,6 +222,7 @@
 			isa = PBXGroup;
 			children = (
 				1E4BE86422A11A3D00BBD15D /* README.md */,
+				1E32AF7122A1E7B900E0AD76 /* TMP */,
 				1EC5698622A0459500715CAC /* Tools */,
 				1E9668B622A0068C00BF89BB /* Presenter */,
 				1EC5697722A0014400715CAC /* View */,
@@ -267,6 +306,7 @@
 		1EC5697722A0014400715CAC /* View */ = {
 			isa = PBXGroup;
 			children = (
+				1E3F67E522A46B5A00254665 /* Dashboard */,
 				1EC5697D22A0041900715CAC /* Authentication */,
 			);
 			path = View;
@@ -294,6 +334,7 @@
 				1EC56945229FFFA200715CAC /* AuthenticationViewController.swift */,
 				1E2698C022A12C56001F1FF9 /* SignInViewController.swift */,
 				1E2698C222A12C6C001F1FF9 /* SignUpViewController.swift */,
+				1E3F67E322A46ABB00254665 /* SignUpCompleteViewController.swift */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -498,6 +539,7 @@
 				1EC5698122A005D400715CAC /* LaunchScreen.storyboard in Resources */,
 				1EC5698322A0083200715CAC /* GoogleService-Info.plist in Resources */,
 				1EC5694E229FFFA300715CAC /* Assets.xcassets in Resources */,
+				1E3F67E922A46B7400254665 /* Dashboard.storyboard in Resources */,
 				1E4BE86522A11A3D00BBD15D /* README.md in Resources */,
 				1E4BE85722A07C9000BBD15D /* fa-regular-400.ttf in Resources */,
 				1E4BE85622A07C9000BBD15D /* fa-brands-400.ttf in Resources */,
@@ -692,9 +734,11 @@
 				1EC5698F22A0480A00715CAC /* AuthenticationButton.swift in Sources */,
 				1E9668BA22A006B100BF89BB /* AuthenticationPresenter.swift in Sources */,
 				1E4BE85D22A0809200BBD15D /* StyleManager.swift in Sources */,
+				1E3F67E422A46ABB00254665 /* SignUpCompleteViewController.swift in Sources */,
 				1EC56946229FFFA200715CAC /* AuthenticationViewController.swift in Sources */,
 				1E2698C122A12C56001F1FF9 /* SignInViewController.swift in Sources */,
 				1E85670922A1473D00C33582 /* UILabelText.swift in Sources */,
+				1E32AF7322A1E7CE00E0AD76 /* MenuTabsView.swift in Sources */,
 				1EC56944229FFFA200715CAC /* AppDelegate.swift in Sources */,
 				1E4BE86322A0871700BBD15D /* AuthenticationTextView.swift in Sources */,
 				1E2698C322A12C6C001F1FF9 /* SignUpViewController.swift in Sources */,
