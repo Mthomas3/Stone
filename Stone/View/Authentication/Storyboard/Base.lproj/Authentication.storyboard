@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.23.1" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.23.1" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lOX-6w-Qt1">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Authentication View Controller-->
+        <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="AuthenticationViewController" customModule="Stone" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -69,10 +69,13 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
+                    </userDefinedRuntimeAttributes>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53.600000000000001" y="27.339901477832512"/>
+            <point key="canvasLocation" x="-938" y="494"/>
         </scene>
         <!--Sign In View Controller-->
         <scene sceneID="kJW-x1-tNx">
@@ -183,7 +186,7 @@
                 <viewControllerPlaceholder storyboardName="Dashboard" referencedIdentifier="DashboardTabBarController" id="C4d-9L-77U" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ocr-3o-b8C" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2412" y="444"/>
+            <point key="canvasLocation" x="2572" y="432"/>
         </scene>
         <!--Sign Up Complete View Controller-->
         <scene sceneID="NxN-bj-ftp">
@@ -269,6 +272,76 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Irc-gf-kxb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1081" y="784"/>
+        </scene>
+        <!--Authentication View Controller-->
+        <scene sceneID="Tip-HW-8De">
+            <objects>
+                <viewController id="lOX-6w-Qt1" customClass="AuthenticationViewController" customModule="Stone" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ddd-S9-kwU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="tzF-HV-QWt" customClass="PageControlView" customModule="Stone" customModuleProvider="target">
+                                <rect key="frame" x="168" y="481" width="39" height="37"/>
+                                <color key="pageIndicatorTintColor" red="0.24688750505447388" green="0.23703205585479736" blue="0.33644777536392212" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="currentPageIndicatorTintColor" red="0.92806249856948853" green="0.8151097297668457" blue="0.8223576545715332" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </pageControl>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YoE-Hf-KDy">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UVy-Zl-Wbl" customClass="AuthenticationButton" customModule="Stone" customModuleProvider="target">
+                                <rect key="frame" x="53" y="559" width="269" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="sgV-ac-HH5"/>
+                                </constraints>
+                                <state key="normal" title="Sign In"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="titleButton" value="Sign In"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dai-o2-evo" customClass="AuthenticationButton" customModule="Stone" customModuleProvider="target">
+                                <rect key="frame" x="53" y="646" width="269" height="50"/>
+                                <state key="normal" title="Sign Up"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="titleButton" value="Sign Up"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="or" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S2k-rK-Aay" customClass="AuthenticationLabels" customModule="Stone" customModuleProvider="target">
+                                <rect key="frame" x="179.66666666666666" y="617" width="16" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="UVy-Zl-Wbl" firstAttribute="leading" secondItem="CB2-Jo-c8s" secondAttribute="leading" constant="53" id="2DN-55-zVn"/>
+                            <constraint firstItem="UVy-Zl-Wbl" firstAttribute="leading" secondItem="Dai-o2-evo" secondAttribute="leading" id="3OG-3c-vna"/>
+                            <constraint firstItem="YoE-Hf-KDy" firstAttribute="centerX" secondItem="ddd-S9-kwU" secondAttribute="centerX" id="4iq-78-SKJ"/>
+                            <constraint firstItem="YoE-Hf-KDy" firstAttribute="leading" secondItem="ddd-S9-kwU" secondAttribute="leading" id="FB1-i3-etC"/>
+                            <constraint firstItem="S2k-rK-Aay" firstAttribute="top" secondItem="UVy-Zl-Wbl" secondAttribute="bottom" constant="8" symbolic="YES" id="M6B-co-zor"/>
+                            <constraint firstAttribute="centerX" secondItem="tzF-HV-QWt" secondAttribute="centerX" id="P6Y-qN-oBN"/>
+                            <constraint firstItem="Dai-o2-evo" firstAttribute="top" secondItem="S2k-rK-Aay" secondAttribute="bottom" constant="8" symbolic="YES" id="bwa-Sl-2fn"/>
+                            <constraint firstItem="CB2-Jo-c8s" firstAttribute="bottom" secondItem="Dai-o2-evo" secondAttribute="bottom" constant="82" id="c0f-le-bBQ"/>
+                            <constraint firstItem="UVy-Zl-Wbl" firstAttribute="centerX" secondItem="tzF-HV-QWt" secondAttribute="centerX" id="dUf-sc-Yg9"/>
+                            <constraint firstItem="YoE-Hf-KDy" firstAttribute="centerY" secondItem="ddd-S9-kwU" secondAttribute="centerY" id="g7W-iR-eRf"/>
+                            <constraint firstItem="UVy-Zl-Wbl" firstAttribute="trailing" secondItem="Dai-o2-evo" secondAttribute="trailing" id="jWD-Ut-hlO"/>
+                            <constraint firstItem="tzF-HV-QWt" firstAttribute="baseline" secondItem="ddd-S9-kwU" secondAttribute="bottom" constant="-294" id="kaF-gB-HSh"/>
+                            <constraint firstItem="UVy-Zl-Wbl" firstAttribute="centerX" secondItem="S2k-rK-Aay" secondAttribute="centerX" id="kb6-yQ-dDM"/>
+                            <constraint firstItem="UVy-Zl-Wbl" firstAttribute="top" secondItem="tzF-HV-QWt" secondAttribute="bottom" constant="41" id="l5W-Z3-Q8n"/>
+                            <constraint firstAttribute="bottom" secondItem="YoE-Hf-KDy" secondAttribute="bottom" id="uhh-O8-ajh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="CB2-Jo-c8s"/>
+                    </view>
+                    <connections>
+                        <outlet property="pageControl" destination="tzF-HV-QWt" id="zMI-iu-T44"/>
+                        <outlet property="scrollView" destination="YoE-Hf-KDy" id="Qfu-3Q-sJ7"/>
+                        <outlet property="signUpButton" destination="Dai-o2-evo" id="9IR-JP-ebQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3DJ-Z2-xwS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2018" y="298"/>
         </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="YUQ-tc-t4B">

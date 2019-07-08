@@ -7,9 +7,29 @@
 //
 
 import Foundation
+import UIKit
 
 final class AuthenticationPresenter {
     
+    private var slides: [AuthenticationInformation] = []
     
+    public func getSlidesLength() -> Int {
+        return slides.count
+    }
+    
+    public func createNewSlide(imageName: String, title: String, designation: String)  {
+        
+        let slide: AuthenticationInformation = Bundle.main.loadNibNamed("AuthenticationInformation", owner: nil, options: nil)?.first as! AuthenticationInformation
+        
+        slide.image.image = UIImage(named: imageName)
+        slide.title.text = title
+        slide.designation.text = designation
+        
+        slides.append(slide)
+    }
+    
+    public func getSlides() -> [AuthenticationInformation] {
+        return slides
+    }
     
 }
