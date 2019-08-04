@@ -15,7 +15,19 @@ class SignInViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.setupView()
     }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        self.view.endEditing(true)
+        super.viewWillDisappear(animated)
+    }
     
+    private func setupView() {
+        self.userEmail.becomeFirstResponder()
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
 }

@@ -15,6 +15,18 @@ class SignUpCompleteViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.setupView()
     }
 
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+    }
+    
+    private func setupView() {
+        self.userPassword.becomeFirstResponder()
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
 }

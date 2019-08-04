@@ -24,10 +24,19 @@ class SignUpViewController: UIViewController {
     }
     
     private func setupView() {
-        
+        self.userFirstname.becomeFirstResponder()
+    }
+
+    override func viewWillDisappear(_ animated: Bool) {
+        self.view.endEditing(true)
+        super.viewWillDisappear(animated)
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+}
+
 //        if let myConstraint = self.view.constraintWith(identifier: "topNextButton"){
 //            myConstraint.constant = 8
 //        }
-    }
-
-}

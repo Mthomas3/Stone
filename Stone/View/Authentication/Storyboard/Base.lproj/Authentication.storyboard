@@ -255,7 +255,7 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SLh-DS-rEc" customClass="AuthenticationButton" customModule="Stone" customModuleProvider="target">
-                                <rect key="frame" x="75" y="472.33333333333331" width="225" height="39.999999999999943"/>
+                                <rect key="frame" x="75" y="461.33333333333331" width="225" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="Bkw-lC-oAM"/>
                                 </constraints>
@@ -285,18 +285,29 @@
                                     <segue destination="5ka-al-5p0" kind="unwind" unwindAction="dismissToSignUpViewController:" id="0hi-tO-flt"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="email or password incorrect" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6FP-K7-ULT">
+                                <rect key="frame" x="62" y="320.33333333333331" width="251" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Iiv-Gh-rSK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.70228880640000002" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="0qX-cj-Iim" firstAttribute="top" relation="lessThanOrEqual" secondItem="Dkd-mJ-UWv" secondAttribute="top" constant="44" id="3Pp-1E-vcM"/>
                             <constraint firstItem="hKt-rf-H7D" firstAttribute="trailing" secondItem="Qh4-dp-qEv" secondAttribute="trailing" constant="9" id="C7X-cg-xWt"/>
-                            <constraint firstItem="SLh-DS-rEc" firstAttribute="top" secondItem="Mfp-to-dJ5" secondAttribute="bottom" constant="162" id="DIt-oe-r3g"/>
                             <constraint firstItem="rg4-jf-Qt4" firstAttribute="leading" secondItem="hKt-rf-H7D" secondAttribute="leading" constant="16" id="Ggt-2e-Z9L"/>
                             <constraint firstItem="WEt-lO-iTc" firstAttribute="leading" secondItem="hKt-rf-H7D" secondAttribute="leading" id="Iz5-gE-rg3"/>
                             <constraint firstItem="WEt-lO-iTc" firstAttribute="top" secondItem="Dkd-mJ-UWv" secondAttribute="top" id="Osh-Ca-o1I"/>
                             <constraint firstItem="rg4-jf-Qt4" firstAttribute="top" secondItem="0qX-cj-Iim" secondAttribute="bottom" constant="15" id="RnT-3q-ul0"/>
+                            <constraint firstItem="SLh-DS-rEc" firstAttribute="top" secondItem="6FP-K7-ULT" secondAttribute="bottom" constant="120" id="TVh-S5-b5z"/>
                             <constraint firstItem="hKt-rf-H7D" firstAttribute="trailing" secondItem="rg4-jf-Qt4" secondAttribute="trailing" constant="151" id="V8L-G3-FJh"/>
                             <constraint firstItem="9uX-ip-cPc" firstAttribute="top" secondItem="TGZ-UI-l6n" secondAttribute="bottom" constant="-19" id="VXl-7I-7er"/>
+                            <constraint firstItem="6FP-K7-ULT" firstAttribute="centerX" secondItem="Dkd-mJ-UWv" secondAttribute="centerX" id="Vxn-bD-LDD"/>
+                            <constraint firstItem="XGE-Gs-h2v" firstAttribute="leading" secondItem="6FP-K7-ULT" secondAttribute="trailing" constant="10" id="XH4-pS-onT"/>
                             <constraint firstItem="rg4-jf-Qt4" firstAttribute="top" secondItem="hKt-rf-H7D" secondAttribute="top" constant="45" id="XNo-nz-CrA"/>
                             <constraint firstItem="hKt-rf-H7D" firstAttribute="bottom" secondItem="XGE-Gs-h2v" secondAttribute="bottom" constant="249" id="Ywb-iM-TE5"/>
                             <constraint firstItem="hKt-rf-H7D" firstAttribute="trailing" secondItem="9uX-ip-cPc" secondAttribute="trailing" constant="19" id="bDx-uF-PIo"/>
@@ -308,6 +319,7 @@
                             <constraint firstItem="Qh4-dp-qEv" firstAttribute="leading" secondItem="hKt-rf-H7D" secondAttribute="leading" constant="16" id="ppz-AT-tYs"/>
                             <constraint firstItem="TGZ-UI-l6n" firstAttribute="trailing" secondItem="hKt-rf-H7D" secondAttribute="trailing" id="qFb-Tg-RiI"/>
                             <constraint firstItem="hKt-rf-H7D" firstAttribute="trailing" secondItem="SLh-DS-rEc" secondAttribute="trailing" constant="75" id="s1B-mo-2JU"/>
+                            <constraint firstItem="6FP-K7-ULT" firstAttribute="top" secondItem="TLk-jp-fND" secondAttribute="bottom" constant="10" id="t9S-aw-0Py"/>
                             <constraint firstItem="hKt-rf-H7D" firstAttribute="trailing" secondItem="Mfp-to-dJ5" secondAttribute="trailing" constant="30" id="tLm-7D-QIv"/>
                             <constraint firstItem="Qh4-dp-qEv" firstAttribute="top" secondItem="rg4-jf-Qt4" secondAttribute="bottom" constant="10" id="u3t-Nh-6eE"/>
                             <constraint firstItem="0qX-cj-Iim" firstAttribute="leading" secondItem="hKt-rf-H7D" secondAttribute="leading" constant="10" id="uQ1-3d-JUE"/>
@@ -501,7 +513,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A7P-AG-zLT" customClass="AuthenticationButton" customModule="Stone" customModuleProvider="target">
-                                <rect key="frame" x="75" y="472.33333333333331" width="225" height="39.999999999999943"/>
+                                <rect key="frame" x="75" y="463.33333333333331" width="225" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="uA0-dt-TW9"/>
                                 </constraints>
@@ -513,6 +525,15 @@
                                     <segue destination="CaJ-qV-yiM" kind="show" id="vmw-Yu-oHs"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="email or password incorrect" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EDS-uo-RVl">
+                                <rect key="frame" x="62" y="392.33333333333331" width="251" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="yoz-pK-Mxu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.70228880640000002" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -520,11 +541,13 @@
                             <constraint firstItem="W3k-Fb-0XD" firstAttribute="trailing" secondItem="dAV-br-alE" secondAttribute="trailing" constant="30" id="2sk-lD-1YD"/>
                             <constraint firstItem="W3k-Fb-0XD" firstAttribute="trailing" secondItem="A7P-AG-zLT" secondAttribute="trailing" constant="75" id="42w-vF-XeF"/>
                             <constraint firstItem="W3k-Fb-0XD" firstAttribute="trailing" secondItem="y7V-tr-Ry6" secondAttribute="trailing" constant="9" id="8gK-ib-nZA"/>
-                            <constraint firstItem="A7P-AG-zLT" firstAttribute="top" secondItem="hPz-Xf-7T0" secondAttribute="bottom" constant="90" identifier="topNextButton" id="BT2-2k-iXm"/>
                             <constraint firstItem="hLY-yU-G7k" firstAttribute="top" secondItem="vnF-My-mVs" secondAttribute="bottom" constant="15" id="Bwb-qL-MjD"/>
+                            <constraint firstItem="ZP5-Gn-2YP" firstAttribute="leading" secondItem="EDS-uo-RVl" secondAttribute="trailing" constant="10" id="H0N-MS-yGZ"/>
                             <constraint firstItem="dAV-br-alE" firstAttribute="leading" secondItem="W3k-Fb-0XD" secondAttribute="leading" constant="30" id="JPC-ep-yyJ"/>
+                            <constraint firstItem="EDS-uo-RVl" firstAttribute="centerX" secondItem="R6f-Vu-VFv" secondAttribute="centerX" id="OAG-QI-FZ5"/>
                             <constraint firstItem="y7V-tr-Ry6" firstAttribute="leading" secondItem="W3k-Fb-0XD" secondAttribute="leading" constant="16" id="SfI-YO-ViV"/>
                             <constraint firstItem="pp8-Ta-1Jc" firstAttribute="top" secondItem="R6f-Vu-VFv" secondAttribute="top" constant="35" id="TNr-xX-ObL"/>
+                            <constraint firstItem="EDS-uo-RVl" firstAttribute="top" secondItem="hPz-Xf-7T0" secondAttribute="bottom" constant="10" id="UBA-tc-Mxu"/>
                             <constraint firstItem="ZP5-Gn-2YP" firstAttribute="leading" secondItem="hPz-Xf-7T0" secondAttribute="trailing" constant="-22" id="UZU-mR-tbq"/>
                             <constraint firstItem="W3k-Fb-0XD" firstAttribute="trailing" secondItem="FIy-b5-g95" secondAttribute="trailing" constant="19" id="Xpf-DM-kuc"/>
                             <constraint firstItem="ZP5-Gn-2YP" firstAttribute="top" secondItem="hPz-Xf-7T0" secondAttribute="bottom" constant="-24" id="YD5-Ve-n9d"/>
@@ -533,6 +556,7 @@
                             <constraint firstItem="nJr-7k-ax5" firstAttribute="leading" secondItem="W3k-Fb-0XD" secondAttribute="leading" id="cVU-k9-gg5"/>
                             <constraint firstItem="y7V-tr-Ry6" firstAttribute="top" secondItem="hLY-yU-G7k" secondAttribute="bottom" constant="8.3333333333333144" id="cy8-H5-9Ll"/>
                             <constraint firstItem="vnF-My-mVs" firstAttribute="top" relation="lessThanOrEqual" secondItem="R6f-Vu-VFv" secondAttribute="top" constant="44" id="cz7-JQ-1c7"/>
+                            <constraint firstItem="A7P-AG-zLT" firstAttribute="top" secondItem="EDS-uo-RVl" secondAttribute="bottom" constant="50" id="eGR-j9-Xd7"/>
                             <constraint firstItem="W3k-Fb-0XD" firstAttribute="trailing" secondItem="hLY-yU-G7k" secondAttribute="trailing" constant="151" id="jaa-Hl-Yaq"/>
                             <constraint firstItem="pp8-Ta-1Jc" firstAttribute="trailing" secondItem="W3k-Fb-0XD" secondAttribute="trailing" id="lTf-hr-I2Q"/>
                             <constraint firstItem="nJr-7k-ax5" firstAttribute="top" secondItem="R6f-Vu-VFv" secondAttribute="top" id="ojA-ft-WvM"/>
@@ -562,6 +586,6 @@
         <image name="StoneVioletOval" width="33" height="33"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="1M3-wz-Fv3"/>
+        <segue reference="WPx-bv-CQv"/>
     </inferredMetricsTieBreakers>
 </document>
