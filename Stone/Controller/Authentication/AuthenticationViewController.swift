@@ -13,8 +13,10 @@ class AuthenticationViewController: UIViewController {
     @IBOutlet private weak var scrollView: UIScrollView!
     @IBOutlet private weak var pageControl: UIPageControl!
     @IBOutlet private weak var signUpButton: AuthenticationButton!
-    private let authenticationPresenter = AuthenticationPresenter()
+    @IBOutlet private weak var labelOr: UILabel!
     
+
+    private let authenticationPresenter = AuthenticationPresenter()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,7 +36,6 @@ class AuthenticationViewController: UIViewController {
         scrollView.delegate = self
         scrollView.showsVerticalScrollIndicator = false
         scrollView.showsHorizontalScrollIndicator = false
-        
     }
     
     private func initPageControl() {
@@ -45,13 +46,13 @@ class AuthenticationViewController: UIViewController {
         
         scrollView.frame = CGRect(x: 0, y: 0, width: view.frame.width, height: view.frame.height)
         scrollView.contentSize = CGSize(width: view.frame.width * CGFloat(authenticationPresenter.getSlidesLength()), height: view.frame.height)
+    
         scrollView.isPagingEnabled = true
         
         let slides = authenticationPresenter.getSlides()
         
-        print("showing slides count \(slides.count)")
-        
         for i in 0 ..< slides.count {
+            
             slides[i].frame = CGRect(x: view.frame.width * CGFloat(i), y: 0, width: view.frame.width, height: view.frame.height)
             scrollView.addSubview(slides[i])
         }
@@ -72,15 +73,22 @@ class AuthenticationViewController: UIViewController {
     private func updateCurrentView() {
         if pageControl.currentPage == 0 {
             
-            UIView.animate(withDuration: 0.3) {
+            UIView.animate(withDuration: 0.5) {
                 self.signUpButton.alpha = 1
+                self.labelOr.alpha = 1
+                
             }
 
         } else {
             UIView.animate(withDuration: 0.3) {
                 self.signUpButton.alpha = 0
+                self.labelOr.alpha = 0
             }
         }
+    }
+    
+    
+    @IBAction func dismissToMainPage(_ segue: UIStoryboardSegue) {
     }
 }
 
@@ -92,10 +100,6 @@ extension AuthenticationViewController : UIScrollViewDelegate {
         pageControl.currentPage = Int(pageIndex)
         
         updateCurrentView()
-    }
-    
-    override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
-        //setScrollViewOnSlides()
     }
     
 }

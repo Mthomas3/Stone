@@ -21,9 +21,9 @@ final class AuthenticationPresenter {
         
         let slide: AuthenticationInformation = Bundle.main.loadNibNamed("AuthenticationInformation", owner: nil, options: nil)?.first as! AuthenticationInformation
         
-        slide.image.image = UIImage(named: imageName)
-        slide.title.text = title
-        slide.designation.text = designation
+        slide.imageView.image = UIImage(named: imageName)
+        slide.titleView.text = title
+        slide.designationView.text = designation
         
         slides.append(slide)
     }

@@ -12,11 +12,14 @@ import UIKit
     
     @IBInspectable public var placeHolder: String?
     @IBInspectable public var placeHolderColor: String?
+    @IBInspectable public var isCorrectionEnable: Bool = false
+
+    public var istoto: Bool?
     
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        self.layer.cornerRadius = 18.0
+        self.layer.cornerRadius = 14.0
         self.attributedPlaceholder = NSAttributedString(string: placeHolder ?? "",
                                                         attributes: [NSAttributedString.Key.foregroundColor: StringToUIColor.getUiColor(hexString: placeHolderColor ?? "#fff")])
         
@@ -30,6 +33,8 @@ import UIKit
         self.font = StyleManager.TEXTFIELD_FONT
         self.textColor = StringToUIColor.getUiColor(hexString: StyleManager.PRIMARY_COLOR)
         
-        
+        if self.isCorrectionEnable == false {
+            self.autocorrectionType = .no
+        }
     }
 }

@@ -8,7 +8,7 @@
 
 import Foundation
 
-final class User {
+final class User: UserProtocol {
     
     let firstName: String
     let familyName: String
@@ -17,7 +17,6 @@ final class User {
     let password: String
     
     init(firstname: String, familyname: String, age: Int, email: String, password: String) {
-        
         self.firstName = firstname
         self.familyName = familyname
         self.age = age

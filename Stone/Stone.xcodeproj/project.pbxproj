@@ -18,13 +18,11 @@
 		1E4BE85D22A0809200BBD15D /* StyleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4BE85C22A0809200BBD15D /* StyleManager.swift */; };
 		1E4BE86322A0871700BBD15D /* AuthenticationTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4BE86222A0871700BBD15D /* AuthenticationTextView.swift */; };
 		1E4BE86522A11A3D00BBD15D /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 1E4BE86422A11A3D00BBD15D /* README.md */; };
-		1E6A457E22CE93C40050BBD8 /* PageControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6A457D22CE93C40050BBD8 /* PageControlView.swift */; };
 		1E85670922A1473D00C33582 /* UILabelText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E85670822A1473D00C33582 /* UILabelText.swift */; };
 		1E85670B22A1474A00C33582 /* UILabelTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E85670A22A1474A00C33582 /* UILabelTitle.swift */; };
+		1E86BEBB22EBC1F700BAF3CF /* UserProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E86BEBA22EBC1F700BAF3CF /* UserProtocol.swift */; };
 		1E9668BA22A006B100BF89BB /* AuthenticationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9668B922A006B100BF89BB /* AuthenticationPresenter.swift */; };
-		1E97102222C90ED000E0CDC4 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E97102122C90ED000E0CDC4 /* TestViewController.swift */; };
-		1E97102422C90FE200E0CDC4 /* Slide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E97102322C90FE200E0CDC4 /* Slide.swift */; };
-		1E97102622C9101100E0CDC4 /* Slide.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E97102522C9101100E0CDC4 /* Slide.xib */; };
+		1EB63BBC22F77CB200AC7844 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB63BBB22F77CB100AC7844 /* View.swift */; };
 		1EBCACD022CD4E3B00AAAD5D /* AuthenticationInformation.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1EBCACCF22CD4E3B00AAAD5D /* AuthenticationInformation.xib */; };
 		1EBCACD222CD4E7700AAAD5D /* AuthenticationInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EBCACD122CD4E7700AAAD5D /* AuthenticationInformation.swift */; };
 		1EC56944229FFFA200715CAC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC56943229FFFA200715CAC /* AppDelegate.swift */; };
@@ -39,6 +37,7 @@
 		1EC5698322A0083200715CAC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1EC5698222A0083200715CAC /* GoogleService-Info.plist */; };
 		1EC5698922A045B200715CAC /* StringToUIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC5698822A045B200715CAC /* StringToUIColor.swift */; };
 		1EC5698F22A0480A00715CAC /* AuthenticationButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC5698E22A0480A00715CAC /* AuthenticationButton.swift */; };
+		1ED2B50B22E4FBEF009A461C /* BackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED2B50A22E4FBEF009A461C /* BackButton.swift */; };
 		921A79D446BBB36FDCF7FBB7 /* Pods_StoneTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E3E04A2D6AF1DED38401971 /* Pods_StoneTests.framework */; };
 		C6C45DCBE7A7E53570BD2BC4 /* Pods_Stone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5414B5D3C0D07AE53F4A6E49 /* Pods_Stone.framework */; };
 		C9AA0C97E1126EA92AA6BCCF /* Pods_StoneUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 451032DC6147F2BA5500ECFC /* Pods_StoneUITests.framework */; };
@@ -73,13 +72,11 @@
 		1E4BE85C22A0809200BBD15D /* StyleManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleManager.swift; sourceTree = "<group>"; };
 		1E4BE86222A0871700BBD15D /* AuthenticationTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationTextView.swift; sourceTree = "<group>"; };
 		1E4BE86422A11A3D00BBD15D /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		1E6A457D22CE93C40050BBD8 /* PageControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageControlView.swift; sourceTree = "<group>"; };
 		1E85670822A1473D00C33582 /* UILabelText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelText.swift; sourceTree = "<group>"; };
 		1E85670A22A1474A00C33582 /* UILabelTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelTitle.swift; sourceTree = "<group>"; };
+		1E86BEBA22EBC1F700BAF3CF /* UserProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProtocol.swift; sourceTree = "<group>"; };
 		1E9668B922A006B100BF89BB /* AuthenticationPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationPresenter.swift; sourceTree = "<group>"; };
-		1E97102122C90ED000E0CDC4 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
-		1E97102322C90FE200E0CDC4 /* Slide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slide.swift; sourceTree = "<group>"; };
-		1E97102522C9101100E0CDC4 /* Slide.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Slide.xib; sourceTree = "<group>"; };
+		1EB63BBB22F77CB100AC7844 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		1EBCACCF22CD4E3B00AAAD5D /* AuthenticationInformation.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AuthenticationInformation.xib; sourceTree = "<group>"; };
 		1EBCACD122CD4E7700AAAD5D /* AuthenticationInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationInformation.swift; sourceTree = "<group>"; };
 		1EC56940229FFFA200715CAC /* Stone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stone.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -100,6 +97,7 @@
 		1EC5698222A0083200715CAC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		1EC5698822A045B200715CAC /* StringToUIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringToUIColor.swift; sourceTree = "<group>"; };
 		1EC5698E22A0480A00715CAC /* AuthenticationButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationButton.swift; sourceTree = "<group>"; };
+		1ED2B50A22E4FBEF009A461C /* BackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackButton.swift; sourceTree = "<group>"; };
 		3B64EE138C355C59E0F8C435 /* Pods-Stone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stone.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Stone/Pods-Stone.debug.xcconfig"; sourceTree = "<group>"; };
 		451032DC6147F2BA5500ECFC /* Pods_StoneUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StoneUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5414B5D3C0D07AE53F4A6E49 /* Pods_Stone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Stone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -214,6 +212,22 @@
 			path = Textview;
 			sourceTree = "<group>";
 		};
+		1E86BEB822EBC1D900BAF3CF /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+				1EC5697922A0016D00715CAC /* User.swift */,
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+		1E86BEB922EBC1DF00BAF3CF /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				1E86BEBA22EBC1F700BAF3CF /* UserProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
 		1E9668B622A0068C00BF89BB /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
@@ -230,10 +244,19 @@
 			path = Authentication;
 			sourceTree = "<group>";
 		};
+		1EB63BBA22F77CA200AC7844 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				1EB63BBB22F77CB100AC7844 /* View.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		1EC56937229FFFA200715CAC = {
 			isa = PBXGroup;
 			children = (
 				1E4BE86422A11A3D00BBD15D /* README.md */,
+				1EB63BBA22F77CA200AC7844 /* Extension */,
 				1E32AF7122A1E7B900E0AD76 /* TMP */,
 				1EC5698622A0459500715CAC /* Tools */,
 				1E9668B622A0068C00BF89BB /* Presenter */,
@@ -327,7 +350,8 @@
 		1EC5697822A0016400715CAC /* User */ = {
 			isa = PBXGroup;
 			children = (
-				1EC5697922A0016D00715CAC /* User.swift */,
+				1E86BEB922EBC1DF00BAF3CF /* Protocol */,
+				1E86BEB822EBC1D900BAF3CF /* UseCase */,
 			);
 			path = User;
 			sourceTree = "<group>";
@@ -364,12 +388,8 @@
 			isa = PBXGroup;
 			children = (
 				1EC56947229FFFA200715CAC /* Authentication.storyboard */,
-				1E97102322C90FE200E0CDC4 /* Slide.swift */,
-				1E97102522C9101100E0CDC4 /* Slide.xib */,
-				1E97102122C90ED000E0CDC4 /* TestViewController.swift */,
 				1EBCACCF22CD4E3B00AAAD5D /* AuthenticationInformation.xib */,
 				1EBCACD122CD4E7700AAAD5D /* AuthenticationInformation.swift */,
-				1E6A457D22CE93C40050BBD8 /* PageControlView.swift */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -414,6 +434,7 @@
 			isa = PBXGroup;
 			children = (
 				1EC5698E22A0480A00715CAC /* AuthenticationButton.swift */,
+				1ED2B50A22E4FBEF009A461C /* BackButton.swift */,
 			);
 			path = Buttons;
 			sourceTree = "<group>";
@@ -563,7 +584,6 @@
 				1E4BE85722A07C9000BBD15D /* fa-regular-400.ttf in Resources */,
 				1E4BE85622A07C9000BBD15D /* fa-brands-400.ttf in Resources */,
 				1EC56949229FFFA200715CAC /* Authentication.storyboard in Resources */,
-				1E97102622C9101100E0CDC4 /* Slide.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -752,21 +772,21 @@
 				1EC5697A22A0016D00715CAC /* User.swift in Sources */,
 				1E4BE85A22A07FAB00BBD15D /* AuthenticationTextfield.swift in Sources */,
 				1EBCACD222CD4E7700AAAD5D /* AuthenticationInformation.swift in Sources */,
-				1E97102222C90ED000E0CDC4 /* TestViewController.swift in Sources */,
 				1EC5694C229FFFA200715CAC /* Stone.xcdatamodeld in Sources */,
 				1E85670B22A1474A00C33582 /* UILabelTitle.swift in Sources */,
 				1EC5698F22A0480A00715CAC /* AuthenticationButton.swift in Sources */,
+				1E86BEBB22EBC1F700BAF3CF /* UserProtocol.swift in Sources */,
 				1E9668BA22A006B100BF89BB /* AuthenticationPresenter.swift in Sources */,
 				1E4BE85D22A0809200BBD15D /* StyleManager.swift in Sources */,
-				1E6A457E22CE93C40050BBD8 /* PageControlView.swift in Sources */,
 				1E3F67E422A46ABB00254665 /* SignUpCompleteViewController.swift in Sources */,
 				1EC56946229FFFA200715CAC /* AuthenticationViewController.swift in Sources */,
 				1E2698C122A12C56001F1FF9 /* SignInViewController.swift in Sources */,
+				1EB63BBC22F77CB200AC7844 /* View.swift in Sources */,
 				1E85670922A1473D00C33582 /* UILabelText.swift in Sources */,
 				1E32AF7322A1E7CE00E0AD76 /* MenuTabsView.swift in Sources */,
 				1EC56944229FFFA200715CAC /* AppDelegate.swift in Sources */,
+				1ED2B50B22E4FBEF009A461C /* BackButton.swift in Sources */,
 				1E4BE86322A0871700BBD15D /* AuthenticationTextView.swift in Sources */,
-				1E97102422C90FE200E0CDC4 /* Slide.swift in Sources */,
 				1E2698C322A12C6C001F1FF9 /* SignUpViewController.swift in Sources */,
 				1EC5698922A045B200715CAC /* StringToUIColor.swift in Sources */,
 			);
@@ -943,7 +963,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Stone.Stone.Stone;
+				PRODUCT_BUNDLE_IDENTIFIER = Stone.com.Thomas;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -962,7 +982,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Stone.Stone.Stone;
+				PRODUCT_BUNDLE_IDENTIFIER = Stone.com.Thomas;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
