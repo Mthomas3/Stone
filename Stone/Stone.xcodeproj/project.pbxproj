@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E0A38A722F85D1900E65DE7 /* ProtocolManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0A38A622F85D1900E65DE7 /* ProtocolManager.swift */; };
 		1E2698C122A12C56001F1FF9 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2698C022A12C56001F1FF9 /* SignInViewController.swift */; };
 		1E2698C322A12C6C001F1FF9 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2698C222A12C6C001F1FF9 /* SignUpViewController.swift */; };
 		1E32AF7322A1E7CE00E0AD76 /* MenuTabsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E32AF7222A1E7CE00E0AD76 /* MenuTabsView.swift */; };
@@ -61,6 +62,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1E0A38A622F85D1900E65DE7 /* ProtocolManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolManager.swift; sourceTree = "<group>"; };
 		1E2698C022A12C56001F1FF9 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		1E2698C222A12C6C001F1FF9 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		1E32AF7222A1E7CE00E0AD76 /* MenuTabsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTabsView.swift; sourceTree = "<group>"; };
@@ -137,6 +139,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1E0A38A522F85CF600E65DE7 /* ProtocolManager */ = {
+			isa = PBXGroup;
+			children = (
+				1E0A38A622F85D1900E65DE7 /* ProtocolManager.swift */,
+			);
+			path = ProtocolManager;
+			sourceTree = "<group>";
+		};
 		1E32AF7122A1E7B900E0AD76 /* TMP */ = {
 			isa = PBXGroup;
 			children = (
@@ -256,6 +266,7 @@
 			isa = PBXGroup;
 			children = (
 				1E4BE86422A11A3D00BBD15D /* README.md */,
+				1E0A38A522F85CF600E65DE7 /* ProtocolManager */,
 				1EB63BBA22F77CA200AC7844 /* Extension */,
 				1E32AF7122A1E7B900E0AD76 /* TMP */,
 				1EC5698622A0459500715CAC /* Tools */,
@@ -770,6 +781,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1EC5697A22A0016D00715CAC /* User.swift in Sources */,
+				1E0A38A722F85D1900E65DE7 /* ProtocolManager.swift in Sources */,
 				1E4BE85A22A07FAB00BBD15D /* AuthenticationTextfield.swift in Sources */,
 				1EBCACD222CD4E7700AAAD5D /* AuthenticationInformation.swift in Sources */,
 				1EC5694C229FFFA200715CAC /* Stone.xcdatamodeld in Sources */,

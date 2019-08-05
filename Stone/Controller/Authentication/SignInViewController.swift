@@ -12,6 +12,7 @@ class SignInViewController: UIViewController {
 
     @IBOutlet private weak var userEmail: AuthenticationTextfield!
     @IBOutlet private weak var userPassword: AuthenticationTextfield!
+    @IBOutlet private weak var labelError: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -118,7 +118,7 @@
                                     <segue destination="gov-L3-6rL" kind="unwind" unwindAction="dismissToMainPage:" id="bh5-xf-L9h"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="email or password incorrect!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="inT-wR-LNW">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="inT-wR-LNW">
                                 <rect key="frame" x="41" y="371" width="301" height="20.333333333333314"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20.329999999999998" id="cPU-7E-fCi"/>
@@ -170,6 +170,7 @@
                         <viewLayoutGuide key="safeArea" id="kmc-sk-n2s"/>
                     </view>
                     <connections>
+                        <outlet property="labelError" destination="inT-wR-LNW" id="eX3-nC-2GR"/>
                         <outlet property="userEmail" destination="DRj-wb-Mtn" id="JyH-Su-GAq"/>
                         <outlet property="userPassword" destination="BXi-Ou-AWx" id="3YV-An-TyQ"/>
                     </connections>
@@ -177,7 +178,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OSO-fU-Jfb" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="gov-L3-6rL" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="-1450.4000000000001" y="431.5270935960591"/>
+            <point key="canvasLocation" x="-1383" y="432"/>
         </scene>
         <!--DashboardTabBarController-->
         <scene sceneID="wgm-zv-jJu">
@@ -190,7 +191,7 @@
         <!--Sign Up Complete View Controller-->
         <scene sceneID="NxN-bj-ftp">
             <objects>
-                <viewController id="CaJ-qV-yiM" customClass="SignUpCompleteViewController" customModule="Stone" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="nextStepLogin" useStoryboardIdentifierAsRestorationIdentifier="YES" id="CaJ-qV-yiM" customClass="SignUpCompleteViewController" customModule="Stone" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Dkd-mJ-UWv">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -285,7 +286,7 @@
                                     <segue destination="5ka-al-5p0" kind="unwind" unwindAction="dismissToSignUpViewController:" id="0hi-tO-flt"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="email or password incorrect" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6FP-K7-ULT">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6FP-K7-ULT">
                                 <rect key="frame" x="62" y="320.33333333333331" width="251" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="Iiv-Gh-rSK"/>
@@ -327,6 +328,7 @@
                         <viewLayoutGuide key="safeArea" id="hKt-rf-H7D"/>
                     </view>
                     <connections>
+                        <outlet property="labelError" destination="6FP-K7-ULT" id="gLF-E6-83D"/>
                         <outlet property="userConfirmpassword" destination="TLk-jp-fND" id="iEj-ZB-qmT"/>
                         <outlet property="userPassword" destination="cOX-0J-fUV" id="cMx-Q7-xUD"/>
                     </connections>
@@ -334,7 +336,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Irc-gf-kxb" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="5ka-al-5p0" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="-1450.4000000000001" y="1147.536945812808"/>
+            <point key="canvasLocation" x="-1383" y="1148"/>
         </scene>
         <!--Authentication View Controller-->
         <scene sceneID="Tip-HW-8De">
@@ -522,10 +524,10 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="titleButton" value="Next"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="CaJ-qV-yiM" kind="show" id="vmw-Yu-oHs"/>
+                                    <action selector="nextButtonAction:" destination="nIo-lU-hns" eventType="touchUpInside" id="qoi-j6-hB9"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="email or password incorrect" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EDS-uo-RVl">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EDS-uo-RVl">
                                 <rect key="frame" x="62" y="392.33333333333331" width="251" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="yoz-pK-Mxu"/>
@@ -567,6 +569,7 @@
                         <viewLayoutGuide key="safeArea" id="W3k-Fb-0XD"/>
                     </view>
                     <connections>
+                        <outlet property="labelError" destination="EDS-uo-RVl" id="c4y-HF-tjv"/>
                         <outlet property="nextButton" destination="A7P-AG-zLT" id="EVE-zy-moD"/>
                         <outlet property="userEmail" destination="hPz-Xf-7T0" id="o1P-Wr-Nwd"/>
                         <outlet property="userFamilyname" destination="R69-7G-Mwu" id="yJW-sO-lHT"/>
