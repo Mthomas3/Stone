@@ -7,11 +7,13 @@
 //
 
 import UIKit
+import Firebase
 
 class SignUpCompleteViewController: UIViewController, NavigationInternProtocol {
 
     @IBOutlet private weak var userPassword: AuthenticationTextfield!
     @IBOutlet private weak var userConfirmpassword: AuthenticationTextfield!
+    @IBOutlet private weak var labelError: UILabel!
     
     private var inputData: Input?
     
@@ -23,7 +25,6 @@ class SignUpCompleteViewController: UIViewController, NavigationInternProtocol {
     
     struct Output { }
     
-    @IBOutlet private weak var labelError: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setupView()
@@ -45,4 +46,30 @@ class SignUpCompleteViewController: UIViewController, NavigationInternProtocol {
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
     }
+    
+    @IBAction func completeSignUp(_ sender: UIButton) {
+        let storyboard = UIStoryboard(name: "Dashboard", bundle: nil)
+        if let nextController = storyboard.instantiateViewController(withIdentifier: "DashboardStoryboard") as? DashboardViewController {
+            
+            guard let firstPassword = self.userPassword.text, !firstPassword.isEmpty,
+                let secondPassword = self.userConfirmpassword.text, !secondPassword.isEmpty else {
+                    self.labelError.text = "Error one of the field is empty"
+                    return
+            }
+            if firstPassword != secondPassword {
+                self.labelError.text = "Passwords are not matching"
+                return
+            }
+            self.labelError.text = ""
+            Auth.auth().createUser(withEmail: (self.inputData?.email)!, password: firstPassword) { (result, error) in
+                if error != nil {
+                    print(error)
+                }
+                print(result)
+            }
+
+        }
+        
+    }
+    
 }

@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		1E0A38A722F85D1900E65DE7 /* ProtocolManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0A38A622F85D1900E65DE7 /* ProtocolManager.swift */; };
+		1E0A38A922F8644D00E65DE7 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0A38A822F8644D00E65DE7 /* String.swift */; };
+		1E0A38AC22F9BD8200E65DE7 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0A38AB22F9BD8200E65DE7 /* DashboardViewController.swift */; };
 		1E2698C122A12C56001F1FF9 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2698C022A12C56001F1FF9 /* SignInViewController.swift */; };
 		1E2698C322A12C6C001F1FF9 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2698C222A12C6C001F1FF9 /* SignUpViewController.swift */; };
 		1E32AF7322A1E7CE00E0AD76 /* MenuTabsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E32AF7222A1E7CE00E0AD76 /* MenuTabsView.swift */; };
@@ -63,6 +65,8 @@
 
 /* Begin PBXFileReference section */
 		1E0A38A622F85D1900E65DE7 /* ProtocolManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolManager.swift; sourceTree = "<group>"; };
+		1E0A38A822F8644D00E65DE7 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		1E0A38AB22F9BD8200E65DE7 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 		1E2698C022A12C56001F1FF9 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		1E2698C222A12C6C001F1FF9 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		1E32AF7222A1E7CE00E0AD76 /* MenuTabsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTabsView.swift; sourceTree = "<group>"; };
@@ -145,6 +149,14 @@
 				1E0A38A622F85D1900E65DE7 /* ProtocolManager.swift */,
 			);
 			path = ProtocolManager;
+			sourceTree = "<group>";
+		};
+		1E0A38AA22F9BD5E00E65DE7 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				1E0A38AB22F9BD8200E65DE7 /* DashboardViewController.swift */,
+			);
+			path = Dashboard;
 			sourceTree = "<group>";
 		};
 		1E32AF7122A1E7B900E0AD76 /* TMP */ = {
@@ -258,6 +270,7 @@
 			isa = PBXGroup;
 			children = (
 				1EB63BBB22F77CB100AC7844 /* View.swift */,
+				1E0A38A822F8644D00E65DE7 /* String.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -336,6 +349,7 @@
 		1EC5697522A0012B00715CAC /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				1E0A38AA22F9BD5E00E65DE7 /* Dashboard */,
 				1EC5697C22A003F600715CAC /* Authentication */,
 			);
 			path = Controller;
@@ -781,6 +795,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1EC5697A22A0016D00715CAC /* User.swift in Sources */,
+				1E0A38AC22F9BD8200E65DE7 /* DashboardViewController.swift in Sources */,
 				1E0A38A722F85D1900E65DE7 /* ProtocolManager.swift in Sources */,
 				1E4BE85A22A07FAB00BBD15D /* AuthenticationTextfield.swift in Sources */,
 				1EBCACD222CD4E7700AAAD5D /* AuthenticationInformation.swift in Sources */,
@@ -792,6 +807,7 @@
 				1E4BE85D22A0809200BBD15D /* StyleManager.swift in Sources */,
 				1E3F67E422A46ABB00254665 /* SignUpCompleteViewController.swift in Sources */,
 				1EC56946229FFFA200715CAC /* AuthenticationViewController.swift in Sources */,
+				1E0A38A922F8644D00E65DE7 /* String.swift in Sources */,
 				1E2698C122A12C56001F1FF9 /* SignInViewController.swift in Sources */,
 				1EB63BBC22F77CB200AC7844 /* View.swift in Sources */,
 				1E85670922A1473D00C33582 /* UILabelText.swift in Sources */,

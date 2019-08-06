@@ -94,7 +94,7 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="titleButton" value="Sign In"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="C4d-9L-77U" kind="show" id="WPx-bv-CQv"/>
+                                    <action selector="SignIn:" destination="Ry4-Kx-R8l" eventType="touchUpInside" id="gP1-a8-bKR"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="StoneVioletOval" translatesAutoresizingMaskIntoConstraints="NO" id="6Nk-5w-trx">
@@ -180,14 +180,6 @@
             </objects>
             <point key="canvasLocation" x="-1383" y="432"/>
         </scene>
-        <!--DashboardTabBarController-->
-        <scene sceneID="wgm-zv-jJu">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Dashboard" referencedIdentifier="DashboardTabBarController" id="C4d-9L-77U" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ocr-3o-b8C" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-649" y="722"/>
-        </scene>
         <!--Sign Up Complete View Controller-->
         <scene sceneID="NxN-bj-ftp">
             <objects>
@@ -265,7 +257,7 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="titleButton" value="Complete"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="C4d-9L-77U" kind="show" id="1M3-wz-Fv3"/>
+                                    <action selector="completeSignUp:" destination="CaJ-qV-yiM" eventType="touchUpInside" id="7ij-6C-xlS"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="StoneIconBottom" translatesAutoresizingMaskIntoConstraints="NO" id="XGE-Gs-h2v">
@@ -588,7 +580,4 @@
         <image name="StonePinkOval" width="44" height="44"/>
         <image name="StoneVioletOval" width="33" height="33"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="WPx-bv-CQv"/>
-    </inferredMetricsTieBreakers>
 </document>

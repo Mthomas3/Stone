@@ -47,7 +47,8 @@ class SignUpViewController: UIViewController {
                 self.labelError.text = "First name, family name incorrect."
                 return
             }
-            guard let email = userEmail.text, !email.isEmpty else {
+            
+            guard let email = userEmail.text, !email.isEmpty, email.isValidEmail() else {
                 self.labelError.text = "Email incorrect"
                 return
             }
