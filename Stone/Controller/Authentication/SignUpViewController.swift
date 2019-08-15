@@ -38,6 +38,7 @@ class SignUpViewController: UIViewController {
     }
 
     @IBAction func nextButtonAction(_ sender: UIButton) {
+        
         let storyboard = UIStoryboard(name: "Authentication", bundle: nil)
         if let nextController = storyboard.instantiateViewController(withIdentifier: "nextStepLogin") as? SignUpCompleteViewController {
             

@@ -49,7 +49,7 @@ class SignUpCompleteViewController: UIViewController, NavigationInternProtocol {
     
     @IBAction func completeSignUp(_ sender: UIButton) {
         let storyboard = UIStoryboard(name: "Dashboard", bundle: nil)
-        if let nextController = storyboard.instantiateViewController(withIdentifier: "DashboardStoryboard") as? DashboardViewController {
+        if let nextController = storyboard.instantiateViewController(withIdentifier: "DashboardTabBarController") as? DashboardTabBarController {
             
             guard let firstPassword = self.userPassword.text, !firstPassword.isEmpty,
                 let secondPassword = self.userConfirmpassword.text, !secondPassword.isEmpty else {
@@ -62,10 +62,16 @@ class SignUpCompleteViewController: UIViewController, NavigationInternProtocol {
             }
             self.labelError.text = ""
             Auth.auth().createUser(withEmail: (self.inputData?.email)!, password: firstPassword) { (result, error) in
-                if error != nil {
-                    print(error)
+                
+                if let user = result?.user {
+                    print(user)
+                    self.present(nextController, animated: true)
                 }
-                print(result)
+                
+                if let error = error {
+                    print(error)
+                    self.labelError.text = "Something went wrong.."
+                }
             }
 
         }

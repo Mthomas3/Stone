@@ -13,4 +13,3 @@ protocol NavigationInternProtocol {
     
     func transferDataToController(input : Input)
 }
-

@@ -42,10 +42,10 @@
             </objects>
             <point key="canvasLocation" x="-422" y="-434"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Dashboard Tab Bar Controller-->
         <scene sceneID="dYY-Rw-B6c">
             <objects>
-                <tabBarController storyboardIdentifier="DashboardTabBarController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="JDA-1j-ARA" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="DashboardTabBarController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="JDA-1j-ARA" customClass="DashboardTabBarController" customModule="Stone" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Iys-zb-gpS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>

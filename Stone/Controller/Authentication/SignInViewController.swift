@@ -35,7 +35,7 @@ class SignInViewController: UIViewController {
     
     @IBAction func SignIn(_ sender: UIButton) {
         let storyboard = UIStoryboard(name: "Dashboard", bundle: nil)
-        if let nextController = storyboard.instantiateViewController(withIdentifier: "DashboardStoryboard") as? DashboardViewController {
+        if let nextController = storyboard.instantiateViewController(withIdentifier: "DashboardTabBarController") as? DashboardTabBarController {
             
             guard let user = self.userEmail.text, !user.isEmpty,
                 let password = self.userPassword.text, !password.isEmpty else {
@@ -43,11 +43,18 @@ class SignInViewController: UIViewController {
                     return
             }
             self.labelError.text = ""
+            
             Auth.auth().signIn(withEmail: user, password: password) { (result, error) in
-                print(error)
-                print(result)
                 
-                //self.present(nextController, animated: true)
+                if let user = result?.user {
+                    print(user)
+                    self.present(nextController, animated: true)
+                }
+                
+                if let error = error {
+                    print(error)
+                    self.labelError.text = "Something went wrong.."
+                }
             }
             
         }
