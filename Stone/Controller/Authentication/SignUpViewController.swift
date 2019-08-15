@@ -45,15 +45,16 @@ class SignUpViewController: UIViewController {
             guard let firstName = userFirstname.text, !firstName.isEmpty,
                 let familyName = userFamilyname.text, !familyName.isEmpty else {
                     
-                self.labelError.text = "First name, family name incorrect."
+                self.labelError.text = "First or family name incorrect."
                 return
             }
             
             guard let email = userEmail.text, !email.isEmpty, email.isValidEmail() else {
-                self.labelError.text = "Email incorrect"
+                self.labelError.text = "This email is invalid."
                 return
             }
             
+            self.labelError.text = ""
             nextController.transferDataToController(input: SignUpCompleteViewController.Input(email: email, firstname: firstName, familyname: familyName))
             
             self.present(nextController, animated: true)

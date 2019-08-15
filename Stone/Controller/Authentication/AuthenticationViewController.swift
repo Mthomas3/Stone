@@ -61,11 +61,11 @@ class AuthenticationViewController: UIViewController {
     
     private func createSlides() {
         
-        authenticationPresenter.createNewSlide(imageName: "decide", title: "Select your favorite dishes and Order", designation: "Select and order your favorite dishes from your favorite restaurants at your home")
+        authenticationPresenter.createNewSlide(imageName: "decide", title: "Take care of your loves one...", designation: "Stone is the best application to take care of your loved one that left too early")
         
-        authenticationPresenter.createNewSlide(imageName: "decide", title: "Select your favorite dishes and Order", designation: "Select and order your favorite dishes from your favorite restaurants at your home")
+        authenticationPresenter.createNewSlide(imageName: "LoginIcon", title: "Make you close to your loved ones", designation: "You can make sure that the grave of your loved ones are being taken care of correctly and in a proper way")
         
-        authenticationPresenter.createNewSlide(imageName: "decide", title: "Select your favorite dishes and Order", designation: "Select and order your favorite dishes from your favorite restaurants at your home")
+        authenticationPresenter.createNewSlide(imageName: "LoginStonePic", title: "Join our family, help the world ❤️", designation: "By joining the unique Stone family, you will make the world a better place to live on")
         
         setScrollViewOnSlides()
     }

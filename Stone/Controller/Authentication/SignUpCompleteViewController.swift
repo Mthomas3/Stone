@@ -70,7 +70,7 @@ class SignUpCompleteViewController: UIViewController, NavigationInternProtocol {
                 
                 if let error = error {
                     print(error)
-                    self.labelError.text = "Something went wrong.."
+                    self.labelError.text = "An error occured, try again."
                 }
             }
 

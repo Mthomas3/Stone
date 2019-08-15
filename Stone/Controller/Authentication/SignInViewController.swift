@@ -53,7 +53,8 @@ class SignInViewController: UIViewController {
                 
                 if let error = error {
                     print(error)
-                    self.labelError.text = "Something went wrong.."
+                    //todo: handle error here
+                    self.labelError.text = "An error occured, try again.."
                 }
             }
             
